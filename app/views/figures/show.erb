@@ -1,0 +1,5 @@
+<h1><%= @figure.name %></h1>
+<h2>Title(s): <%= @titles.map{ |title| title.name }.join(", ") %></h2>
+<h3>Landmark(s): <%= @landmarks.map{ |landmark| landmark.name }.join(", ") %></h3>
+
+<a href="/figures/<%= @figure.id %>/edit">Edit this Figure</a>

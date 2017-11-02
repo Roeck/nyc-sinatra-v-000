@@ -1,0 +1,25 @@
+<h2>Figures of History and their Landmarks</h2>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<h3>We have figures:</h3>
+<ul>
+  <% @figures.each do |figure| %>
+  <li><a href="/figures/<%= figure.id %>"><%= figure.name %></a></li>
+  <% end %>
+</ul>
+
+<h3>We have Landmarks:</h3>
+<ul>
+  <% @landmarks.each do |landmark| %>
+  <li><a href="/landmarks/<%= landmark.id %>"><%= landmark.name %></a></li>
+  <% end %>
+</ul>
+
+<h3>We have Titles:</h3>
+<ul>
+  <% @titles.each do |title| %>
+  <li><a href="/titles/<%= title.id %>"><%= title.name %></a></li>
+  <% end %>
+</ul>

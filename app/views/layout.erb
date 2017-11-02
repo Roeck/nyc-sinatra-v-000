@@ -3,7 +3,6 @@
   <head>
     <!--
      Frank Sinatra
-
   "The old crooner himself:"
        QB"   .  . ....^FBQQBQBQ
        #^   ..../,, ,/yyBQBDBt`"B
@@ -31,7 +30,9 @@
   -->
   </head>
   <body>
+    <%= erb :'/layouts/_header' %>
     <%= yield %>
+    <%= erb :'/layouts/_footer' %>
   </body>
 
 </html>
